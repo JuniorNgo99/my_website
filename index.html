@@ -1,11 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trang Chủ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+
+}
+
+/* MENU */
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+position:fixed;
+width:100%;
+top:0;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(10px);
+
+}
+
+.logo{
+
+font-size:32px;
+font-weight:bold;
+color:white;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:yellow;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:80px;
+
+}
+
+.container{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+width:1200px;
+
+}
+
+.left{
+
+width:50%;
+
+}
+
+.left h1{
+
+font-size:60px;
+color:white;
+margin-bottom:20px;
+
+}
+
+.left p{
+
+font-size:20px;
+color:white;
+line-height:35px;
+margin-bottom:35px;
+
+}
+
+button{
+
+padding:16px 40px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+cursor:pointer;
+
+background:#ff9800;
+
+color:white;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+background:#ff5722;
+
+}
+
+.right{
+
+width:45%;
+text-align:center;
+
+}
+
+.right img{
+
+width:100%;
+border-radius:20px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.3);
+
+}
+
+/* CARD */
+
+.cards{
+
+padding:80px;
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+background:white;
+
+}
+
+.card{
+
+width:300px;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+transition:.4s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-15px);
+
+}
+
+.card img{
+
+width:90px;
+
+margin-bottom:20px;
+
+}
+
+.card h2{
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+color:#555;
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+@media(max-width:900px){
+
+header{
+
+padding:20px;
+
+flex-direction:column;
+
+}
+
+.container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.left,.right{
+
+width:100%;
+
+}
+
+.left h1{
+
+font-size:42px;
+
+}
+
+.right{
+
+margin-top:40px;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <h1>Xin chào đển với kênh minh</h1>
+
+<header>
+
+<div class="logo">🌸 Trang Chủ</div>
+
+<nav>
+
+<a href="#">Trang chủ</a>
+
+<a href="#">Giới thiệu</a>
+
+<a href="#">Dịch vụ</a>
+
+<a href="#">Liên hệ</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="left">
+
+<h1>Xin chào 👋</h1>
+
+<p>
+Chào mừng bạn đến với website của mình.
+Đây là giao diện hiện đại được thiết kế bằng HTML và CSS với hiệu ứng đẹp mắt.
+</p>
+
+<button>Bắt đầu</button>
+
+</div>
+
+<div class="right">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900" alt="Laptop">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+
+<h2>Thiết kế đẹp</h2>
+
+<p>Giao diện hiện đại và dễ sử dụng.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png">
+
+<h2>Tốc độ cao</h2>
+
+<p>Tối ưu hiển thị và tải nhanh.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/888/888879.png">
+
+<h2>Responsive</h2>
+
+<p>Hoạt động tốt trên máy tính và điện thoại.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 - Website được thiết kế bằng HTML & CSS ❤️</h3>
+
+</footer>
+
 </body>
+
 </html>
